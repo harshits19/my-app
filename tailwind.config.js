@@ -8,11 +8,10 @@ export default {
       colors: {
         ltPrimary: "#6474E5",
         dkPrimary: "#1d1d1d",
-        ltSecondary: "#C3F8FF",
-        dkSecondary: "#46C2CB",
+        ltSecondary: "#BBE1FA",
+        dkSecondary: "#352F44",
         myBlack: "#343434",
         myGray: "#BDCDD6",
-        myBeige: "#EEE9DA",
       },
       dropShadow: {},
       fontFamily: {
