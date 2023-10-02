@@ -1,0 +1,38 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Google Sans Bold";
+  src:
+    local("Google Sans Bold"),
+    url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
+}
+@font-face {
+  font-family: "Google Sans Medium";
+  src:
+    local("Google Sans Medium"),
+    url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
+}
+@font-face {
+  font-family: "Google Sans Regular";
+  src:
+    local("Google Sans Regular"),
+    url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
+}
+
+@layer base {
+  body {
+    @apply text-myBlack dark:bg-dkPrimary m-0 box-border cursor-default overflow-x-hidden bg-white p-0 transition-colors duration-200 ease-linear dark:text-white;
+  }
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Google Sans Regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
