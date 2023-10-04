@@ -35,21 +35,21 @@ const Navbar = ({ themeState, setThemeState }) => {
         <div className="font-sansReg text-xl tracking-wide md:text-3xl cursor-pointer" onClick={() => navigate("/")}>
           harshit's
         </div>
-        <div className="hidden flex-row items-center gap-x-4 font-sansReg text-lg md:flex ">
-          <span className="cursor-pointer rounded-sm px-2.5 py-0.5 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("introSection")}>
+        <div className="hidden flex-row items-center gap-x-6 font-sansMed text-sm md:flex uppercase">
+          <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("introSection")}>
             Home
           </span>
-          <span className="cursor-pointer rounded-sm px-2.5 py-0.5 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("techstackSection")}>
+          <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("techstackSection")}>
             Skills
           </span>
-          <span className="cursor-pointer rounded-sm px-2.5 py-0.5 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("projectSection")}>
+          <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("projectSection")}>
             Projects
           </span>
-          <span className="cursor-pointer rounded-sm px-2.5 py-0.5 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => navigate("/projects")}>
+          <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => navigate("/projects")}>
             Repositories
           </span>
           <span
-            className="cursor-pointer rounded-sm px-2.5 py-0.5 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]"
+            className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]"
             onClick={() => document.getElementById("footerSection")?.scrollIntoView({ behavior: "smooth" })}>
             Contact
           </span>

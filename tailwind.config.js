@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme")
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
@@ -7,10 +6,10 @@ export default {
     extend: {
       colors: {
         ltPrimary: "#6474E5",
+        dkPrimary: "#0d1321",
         primaryHover: "#4f5fcf",
-        dkPrimary: "#1d1d1d",
-        ltSecondary: "#BBE1FA",
-        dkSecondary: "#25212d",
+        ltSecondary: "#cae9ff",
+        dkSecondary: "#22223b",
         myBlack: "#343434",
         myGray: "#BDCDD6",
       },

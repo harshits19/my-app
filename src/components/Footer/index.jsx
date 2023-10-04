@@ -71,7 +71,7 @@ const Footer = () => {
                 Message*
               </span>
             </div>
-            <button className="flex w-min items-center gap-x-2 rounded bg-ltPrimary px-4 py-1 font-sansMed text-white">
+            <button className="flex w-min items-center gap-x-2 rounded bg-ltPrimary hover:bg-primaryHover px-4 py-1 font-sansMed text-white">
               Send
               <IoSendSharp className="h-4 w-4" />
             </button>
