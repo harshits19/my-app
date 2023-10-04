@@ -7,7 +7,7 @@ import ScrollTop from "./components/ScrollTop"
 import ProjectsPage from "./pages/ProjectsPage"
 
 const App = () => {
-  const [themeState, setThemeState] = useState(localStorage.theme || "dark")
+  const [themeState, setThemeState] = useState(localStorage.theme || "light")
   useEffect(() => {
     if (themeState === "dark") {
       document.documentElement.classList.add("dark")

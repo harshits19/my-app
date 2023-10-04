@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className="flex-1">
           <h1 className="mb-8 text-4xl">Say Hi!</h1>
-          <form className="flex flex-col gap-y-2.5" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex flex-col gap-y-2.5" onSubmit={(e) => e.preventDefault()} data-netlify="true">
             <div className="relative">
               <input
                 className="customInput w-full rounded border-2 border-solid border-myGray bg-inherit px-4 py-2 text-base outline-none hover:border-myBlack focus:border-ltPrimary focus:text-ltPrimary dark:border-myBlack dark:hover:border-[#bdcdd663] dark:focus:border-ltPrimary"

@@ -1,4 +1,5 @@
 import Markdown from "react-markdown"
+import introImg from "../../assets/images/introBg.svg"
 import { BsInstagram, BsGithub } from "react-icons/bs"
 import { BiLogoLinkedin, BiLogoGmail} from "react-icons/bi"
 import { IoMdChatbubbles } from "react-icons/io"
@@ -59,7 +60,7 @@ const IntroSection = ({data}) => {
         </div>
       </div>
       <div className="hidden flex-1 justify-center sm:flex">
-        <img src={data?.mainImg} className="max-w-80 lg:max-w-96 max-h-80 lg:max-h-96 xl:max-h-[32rem] xl:max-w-[32rem]" alt="Intro img" />
+        <img src={introImg} className="max-w-80 lg:max-w-96 max-h-80 lg:max-h-96 xl:max-h-[32rem] xl:max-w-[32rem]" alt="Intro img" />
       </div>
     </section>
   )

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
-import { DownSeperator, UpSeperator } from "../../assets/SectionSeperators"
 import ProjectBox from "./ProjectBox"
 import { BiSolidChevronRight } from "react-icons/bi"
+import movieAppImg from "../../assets/images/movieApp.png"
+import foodAppImg from "../../assets/images/foodApp.png"
+import videoAppImg from "../../assets/images/videoApp.png"
 
 const ViewProjectsBtn = () => {
   return (
@@ -20,9 +22,9 @@ const ProjectSection = ({ data }) => {
   return (
     <section className="mt-16 scroll-mt-14 md:scroll-mt-16" id="projectSection">
       <div className="mb-8 text-center font-sansMed text-4xl md:text-6xl">Featured Projects</div>
-      <ProjectBox data={movieApp} reversed="false" />
-      <ProjectBox data={foodApp} reversed="true" />
-      <ProjectBox data={videoApp} reversed="false" />
+      <ProjectBox data={movieApp} reversed="false" imageURL={movieAppImg}/>
+      <ProjectBox data={foodApp} reversed="true" imageURL={foodAppImg}/>
+      <ProjectBox data={videoApp} reversed="false" imageURL={videoAppImg}/>
       <ViewProjectsBtn />
     </section>
   )

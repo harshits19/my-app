@@ -1,4 +1,5 @@
 import TechStack from "./TechStack"
+import techStachBg from "../../assets/images/techstack.svg"
 
 const TechstackSection = ({ data }) => {
   return (
@@ -6,7 +7,7 @@ const TechstackSection = ({ data }) => {
       <div className="mb-8 text-center font-sansMed text-4xl md:text-6xl">{data?.sectionTitle}</div>
       <div className="flex flex-col gap-4 md:flex-row md:items-center lg:gap-x-8">
         <div className="flex-1 p-4 md:p-0">
-          <img src={data?.mainImg} className="lg:max-w-96 xl:max-w-[32rem]" />
+          <img src={techStachBg} className="lg:max-w-96 xl:max-w-[32rem]" />
         </div>
         <div className="flex-1">
           <TechStack />

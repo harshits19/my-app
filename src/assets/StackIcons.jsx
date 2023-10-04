@@ -159,10 +159,9 @@ const Firebase = ({ classList }) => {
     </svg>
   )
 }
-
 const SocketIo = ({ classList }) => {
   return (
-    <svg viewBox="0 0 128 128" className={`dark:fill-white fill-myBlack hover:animate-[popin_400ms_ease-in-out_0s_1_normal_both] ${classList}`}>
+    <svg viewBox="0 0 128 128" className={`fill-myBlack hover:animate-[popin_400ms_ease-in-out_0s_1_normal_both] dark:fill-white ${classList}`}>
       <g fillRule="evenodd">
         <path
           d="M63.951.001C28.696.001.001 28.696.001 63.951s28.695 63.95 63.95 63.95 63.95-28.695 63.95-63.95S99.206.001 63.95.001zm0 10.679c29.484 0 53.272 23.787 53.272 53.271 0 29.485-23.788 53.272-53.272 53.272-29.484 0-53.272-23.787-53.272-53.272 0-29.484 23.788-53.271 53.272-53.271z"
@@ -184,6 +183,19 @@ const Redux = ({ classList }) => {
   )
 }
 
+HTML5.displayName = "HTML5"
+CSS3.displayName = "CSS3"
+JavaScript.displayName = "JavaScript"
+ReactJs.displayName = "ReactJs"
+NodeJs.displayName = "NodeJs"
+MongoDB.displayName = "MongoDB"
+ExpressJs.displayName = "ExpressJs"
+SocketIo.displayName = "SocketIo"
+Firebase.displayName = "Firebase"
+Git.displayName = "Git"
+Tailwind.displayName = "Tailwind"
+Redux.displayName = "Redux"
+
 /* 
 const MUI = ({classList}) => {
   return (<svg viewBox="0 0 128 128" className={`hover:animate-[popin_400ms_ease-in-out_0s_1_normal_both] ${classList}`}>
@@ -195,25 +207,21 @@ const NextJs = ({classList}) => {
   <path d="M30.2 45.9h24.1v1.9H32.4v14.4H53v1.9H32.4v15.8h22.2v1.9H30.2V45.9zm26.3 0h2.6l11.4 15.8L82 45.9l15.8-20-26 37.5 13.4 18.4h-2.7L70.4 65 58.2 81.8h-2.6l13.5-18.4-12.6-17.5zm29.7 1.9v-1.9h27.5v1.9H101v34h-2.2v-34H86.2zM0 45.9h2.7l38.2 56.8-15.8-20.9L2.3 48.6l-.1 33.2H0zm113.5 33.4c.5 0 .8-.3.8-.8s-.3-.8-.8-.8-.8.3-.8.8.4.8.8.8zm2.2-2.1c0 1.3 1 2.2 2.4 2.2 1.5 0 2.4-.9 2.4-2.5v-5.5h-1.2v5.5c0 .9-.4 1.3-1.2 1.3-.7 0-1.2-.4-1.2-1.1h-1.2zm6.3-.1c.1 1.4 1.2 2.3 3 2.3s3-.9 3-2.4c0-1.2-.7-1.8-2.2-2.2l-.9-.2c-1-.2-1.4-.6-1.4-1.1 0-.7.6-1.2 1.6-1.2.9 0 1.5.4 1.6 1.2h1.2c-.1-1.3-1.2-2.2-2.8-2.2-1.7 0-2.8.9-2.8 2.3 0 1.1.6 1.8 2 2.1l1 .2c1 .2 1.5.6 1.5 1.2 0 .7-.7 1.2-1.7 1.2s-1.8-.5-1.9-1.2H122z"></path>
   </svg>)
 }
-
 const TypeScript = ({classList}) => {
   return (<svg viewBox="0 0 128 128" className={`hover:animate-[popin_400ms_ease-in-out_0s_1_normal_both] ${classList}`}>
   <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path><path data-name="original" fill="#007acc" d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H56.66v46.23H45.15V69.26H28.88v-5a49.19 49.19 0 01.12-5.17C29.08 59 39 59 51 59h21.83z"></path>
   </svg>)
 }
-
 const GraphQL = ({classList}) => {
   return (<svg viewBox="0 0 128 128" className={`hover:animate-[popin_400ms_ease-in-out_0s_1_normal_both] ${classList}`}>
   <g fill="#E434AA"><path d="M18.39 96.852l-4.6-2.657L65.04 5.434l4.597 2.656zm0 0"></path><path d="M12.734 87.105H115.23v5.31H12.734zm0 0"></path><path d="M66.031 119.688L14.766 90.09l2.656-4.602 51.266 29.602zm0 0M110.566 42.543L59.301 12.941l2.656-4.597 51.266 29.597zm0 0"></path><path d="M17.434 42.523l-2.657-4.601 51.27-29.598 2.656 4.598zm0 0"></path><path d="M109.621 96.852L58.375 8.09l4.598-2.656 51.25 88.761zm0 0M16.8 34.398h5.313v59.204h-5.312zm0 0"></path><path d="M105.887 34.398h5.312v59.204h-5.312zm0 0"></path><path d="M65.129 117.441l-2.32-4.02 44.586-25.745 2.32 4.02zm0 0"></path><path d="M118.238 95.328c-3.07 5.344-9.918 7.168-15.261 4.098-5.344-3.074-7.168-9.922-4.098-15.266 3.074-5.344 9.922-7.168 15.266-4.097 5.375 3.105 7.199 9.921 4.093 15.265M29.09 43.84c-3.074 5.344-9.922 7.168-15.266 4.097-5.344-3.074-7.168-9.921-4.097-15.265 3.074-5.344 9.921-7.168 15.265-4.098 5.344 3.106 7.168 9.922 4.098 15.266M9.762 95.328c-3.075-5.344-1.25-12.16 4.093-15.266 5.344-3.07 12.16-1.246 15.266 4.098 3.07 5.344 1.246 12.16-4.098 15.266-5.375 3.07-12.191 1.246-15.261-4.098M98.91 43.84c-3.07-5.344-1.246-12.16 4.098-15.266 5.344-3.07 12.16-1.246 15.265 4.098 3.07 5.344 1.247 12.16-4.097 15.266-5.344 3.07-12.192 1.246-15.266-4.098M64 126.656a11.158 11.158 0 01-11.168-11.168A11.158 11.158 0 0164 104.32a11.158 11.158 0 0111.168 11.168c0 6.145-4.992 11.168-11.168 11.168M64 23.68a11.158 11.158 0 01-11.168-11.168A11.158 11.158 0 0164 1.344a11.158 11.158 0 0111.168 11.168A11.158 11.158 0 0164 23.68"></path></g>
   </svg>)
 }
  */
-
 export const IconsStack = [HTML5, CSS3, JavaScript, ReactJs, Tailwind, Firebase, NodeJs, MongoDB, ExpressJs, Redux, SocketIo]
-
 export const filterStack = (array) => {
   const filteredStack = IconsStack?.filter((component) => {
-    return array?.includes(component?.name)
+    return array?.includes(component?.displayName)
   })
   return filteredStack
 }

@@ -1,6 +1,5 @@
 export const IntroSectionData = {
   sectionTitle: "Hello 👋.",
-  mainImg: "/src/assets/images/introBg.svg",
   description1: `I'm **Harshit Gaur.** Full-stack Developer,`,
   description2: "I'm a tech enthusiast 👻, and i love designing websites.",
   socialLinks: {
@@ -12,7 +11,6 @@ export const IntroSectionData = {
 }
 export const TechStackSectionData = {
   sectionTitle: "Here's what I do",
-  mainImg: "/src/assets/images/techstack.svg",
   skillsDescription: [
     "⚡ Develop highly interactive Front end / User Interfaces for your web applications",
     "⚡ Building responsive website front end using ReactJS",
@@ -23,7 +21,6 @@ export const TechStackSectionData = {
 export const ProjectSectionData = {
   movieApp: {
     title: "MoviesFlick",
-    mainImg: "/src/assets/images/movieApp.png",
     description: [
       "The MoviesFlick app is inspired by **Netflix**, it provides the user with browsing and searching for movies and TV shows.",
       "Has features such as browsing movies and TV shows by **genre**, **searching** movies and TV shows by keyword, adding a movie or TV show to the **user-list** (watch later), and customizing the **user-profile.**",
@@ -37,7 +34,6 @@ export const ProjectSectionData = {
   },
   foodApp: {
     title: "FoodChimp",
-    mainImg: "/src/assets/images/foodApp.png",
     description: [
       "The FoodChimp app provides a convenient platform that allows users to view, search for, and order food from their **nearby restaurants**. It draws its primary inspiration from **Swiggy.**",
       "The main features of the app include getting nearby restaurants based on the **GPS location** of the user and **dynamically switching the locations** of different cities.",
@@ -52,7 +48,6 @@ export const ProjectSectionData = {
   },
   videoApp: {
     title: "WatchIt",
-    mainImg: "/src/assets/images/videoApp.png",
     description: [
       "It's a React project based on the **YouTube** that aims to recreate some of the core features and functionalities of the popular **video-sharing platform.**",
       "The main goal is to provide users with a responsive and interactive platform for discovering, watching, and sharing videos.",
@@ -71,9 +66,8 @@ export const ProjectPageData = {
   movieApp: ProjectSectionData.movieApp,
   foodApp: ProjectSectionData.foodApp,
   videoApp: ProjectSectionData.videoApp,
-  blogApp: {
+  /* blogApp: {
     title: "Blog-App",
-    mainImg: "",
     description: ["", "", ""],
     links: {
       github: "https://github.com/harshits19/blog-app",
@@ -83,7 +77,6 @@ export const ProjectPageData = {
   },
   foodApp2: {
     title: "FoodSimp",
-    mainImg: "",
     description: ["", "", ""],
     links: {
       github: "https://github.com/harshits19/food-app",
@@ -93,7 +86,6 @@ export const ProjectPageData = {
   },
   newsApp: {
     title: "News-App",
-    mainImg: "",
     description: ["", "", ""],
     links: {
       github: "https://github.com/harshits19/news-app",
@@ -103,7 +95,6 @@ export const ProjectPageData = {
   },
   loginApp: {
     title: "Login-App",
-    mainImg: "",
     description: ["", "", ""],
     links: {
       github: "https://github.com/harshits19/login-app",
@@ -113,12 +104,11 @@ export const ProjectPageData = {
   },
   chatApp2: {
     title: "Realtime Chat-App",
-    mainImg: "",
     description: ["", "", ""],
     links: {
       github: "https://github.com/harshits19/",
       liveDemo: "",
     },
     stackUsed: ["HTML5", "CSS3", "JavaScript"],
-  },
+  }, */
 }
