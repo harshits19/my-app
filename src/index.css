@@ -23,7 +23,7 @@
 
 @layer base {
   body {
-    @apply m-0 box-border cursor-default overflow-x-hidden bg-white p-0 text-myBlack transition-colors duration-200 ease-linear dark:bg-dkPrimary dark:text-white;
+    @apply m-0 box-border cursor-default overflow-x-hidden bg-white p-0 text-myBlack dark:bg-dkPrimary dark:text-white;
   }
   .customInput:valid + .placeholder,
   .customInput:focus + .placeholder {
@@ -43,16 +43,13 @@ body {
   0% {
     transform: scale(1);
   }
-  25% {
+  33% {
     transform: scale(0.95);
   }
-  50% {
+  66% {
     transform: scale(1);
   }
-  75% {
-    transform: scale(1.05);
-  }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }

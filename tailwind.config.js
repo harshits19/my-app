@@ -7,9 +7,10 @@ export default {
     extend: {
       colors: {
         ltPrimary: "#6474E5",
+        primaryHover: "#4f5fcf",
         dkPrimary: "#1d1d1d",
         ltSecondary: "#BBE1FA",
-        dkSecondary: "#352F44",
+        dkSecondary: "#25212d",
         myBlack: "#343434",
         myGray: "#BDCDD6",
       },
