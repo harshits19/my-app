@@ -1,7 +1,7 @@
 export const IntroSectionData = {
   sectionTitle: "Hello 👋.",
-  description1: `I'm **Harshit Gaur.** Full-stack Developer,`,
-  description2: "I'm a tech enthusiast 👻, and i love designing websites.",
+  description1: `I'm **Harshit Gaur,** a full-stack developer.`,
+  description2: "I'm a tech enthusiast 👻, and I love designing websites.",
   socialLinks: {
     github: "https://github.com/harshits19",
     linkedin: "https://www.linkedin.com/in/harshitgaur19/",

@@ -1,11 +1,9 @@
-import { useNavigate} from "react-router-dom"
 import { MdLightMode as LightBtn, MdNightlight as DarkBtn, MdHome, MdPerson } from "react-icons/md"
 import { HiMiniPresentationChartLine as ProjectBtn } from "react-icons/hi2"
 import { IoMdChatboxes as ContactBtn } from "react-icons/io"
 import { IoChevronForwardOutline as BackBtn } from "react-icons/io5"
 
-const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState,scrollToSection }) => {
-  const navigate = useNavigate()
+const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState,scrollToSection,handleProjectNav }) => {
   return (
     <>
       <div
@@ -51,7 +49,7 @@ const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState,scro
             className="duration-00 flex cursor-pointer items-center p-4 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]"
             onClick={() => {
               setMenuState(false)
-              navigate("/projects")
+              handleProjectNav()
             }}>
             <MdPerson className="h-6 w-6" />
             <span className="pl-3 leading-3">Repositories</span>

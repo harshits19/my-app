@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, memo } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 import MobileMenu from "./MobileMenu"
 import { MdLightMode as LightBtn, MdNightlight as DarkBtn, MdMenu } from "react-icons/md"
@@ -24,18 +24,22 @@ const Navbar = ({ themeState, setThemeState }) => {
       let checkExist = setInterval(() => {
         document.getElementById(sectionName)?.scrollIntoView({ behavior: "smooth" })
         clearInterval(checkExist)
-      }, 300)
+      }, 400)
     }
+  }
+  const handleProjectNav = () => {
+    if (location.pathname === "/") navigate("/projects")
+    else document.getElementById("projectsPageSection")?.scrollIntoView({ behavior: "smooth", block: "center" })
   }
 
   return (
     <>
       <div
         className={`sticky top-0 z-30 flex h-14 w-full items-center justify-between bg-ltPrimary px-4 text-white drop-shadow-md transition-colors duration-200 dark:bg-dkPrimary dark:drop-shadow-none md:h-16 md:px-8`}>
-        <div className="font-sansReg text-xl tracking-wide md:text-3xl cursor-pointer" onClick={() => navigate("/")}>
+        <div className="cursor-pointer font-sansReg text-xl tracking-wide md:text-3xl" onClick={() => navigate("/")}>
           harshit's
         </div>
-        <div className="hidden flex-row items-center gap-x-6 font-sansMed text-sm md:flex uppercase">
+        <div className="hidden flex-row items-center gap-x-6 font-sansMed text-sm uppercase md:flex">
           <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("introSection")}>
             Home
           </span>
@@ -45,7 +49,7 @@ const Navbar = ({ themeState, setThemeState }) => {
           <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("projectSection")}>
             Projects
           </span>
-          <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={() => navigate("/projects")}>
+          <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" onClick={handleProjectNav}>
             Repositories
           </span>
           <span
@@ -61,8 +65,8 @@ const Navbar = ({ themeState, setThemeState }) => {
           <MdMenu className="h-10 w-10 cursor-pointer rounded-full p-1.5 text-white duration-200 ease-in hover:bg-[#525f812b] dark:hover:bg-[#9797972b]" />
         </div>
       </div>
-      <MobileMenu menuState={menuState} setMenuState={setMenuState} themeState={themeState} toggleThemeState={toggleThemeState} scrollToSection={scrollToSection}/>
+      <MobileMenu menuState={menuState} setMenuState={setMenuState} themeState={themeState} toggleThemeState={toggleThemeState} scrollToSection={scrollToSection} handleProjectNav={handleProjectNav} />
     </>
   )
 }
-export default Navbar
+export default memo(Navbar)

@@ -27,10 +27,9 @@
   }
   .customInput:valid + .placeholder,
   .customInput:focus + .placeholder {
-    @apply -translate-y-5 scale-[0.8] bg-white text-[#6474E5] dark:bg-dkPrimary;
-  }
+    @apply -translate-y-[17px] scale-[0.8] bg-white text-[#6474E5] dark:bg-dkPrimary;
+  } 
 }
-
 body {
   font-size: 1rem;
   font-family: "Google Sans Regular", sans-serif;
@@ -38,7 +37,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
 }
-
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
 @keyframes popin {
   0% {
     transform: scale(1);

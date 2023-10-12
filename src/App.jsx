@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage"
 import Footer from "./components/Footer"
 import ScrollTop from "./components/ScrollTop"
 import ProjectsPage from "./pages/ProjectsPage"
+import { AnimatePresence } from "framer-motion"
 
 const App = () => {
   const [themeState, setThemeState] = useState(localStorage.theme || "light")
@@ -21,8 +22,20 @@ const App = () => {
       <div className="app">
         <Navbar themeState={themeState} setThemeState={setThemeState} />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/"
+            element={
+              <AnimatePresence initial={false}>
+                <HomePage />
+              </AnimatePresence>
+            }
+          />
+          <Route path="/projects"
+            element={
+              <AnimatePresence initial={false}>
+                <ProjectsPage />
+              </AnimatePresence>
+            }
+          />
         </Routes>
         <Footer />
         <ScrollTop />

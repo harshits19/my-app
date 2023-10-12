@@ -14,7 +14,7 @@ const ProjectBox = ({ data, reversed, imageURL }) => {
         <div className="relative flex max-w-[1280px] flex-col gap-4 p-4 md:flex-row md:px-10 md:py-10 lg:mx-auto lg:gap-8">
           {imageURL && (
             <div className={`flex-1 ${reversed === "true" && "order-1 md:order-2"}`}>
-              <img src={imageURL} className="aspect-video w-full rounded" loading="lazy" alt="project img" />
+              <img src={imageURL} className="aspect-video w-full rounded" alt="project img" />
             </div>
           )}
           <div className={`flex-1 text-left ${reversed === "true" && "order-2 md:order-1"}`}>
