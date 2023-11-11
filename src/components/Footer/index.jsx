@@ -43,23 +43,23 @@ const Footer = () => {
       <div className="flex flex-col gap-4 md:flex-row lg:gap-x-8">
         <div className="flex-1">
           <h1 className="mb-4 text-4xl md:mb-8">Connect with me</h1>
-          <div className="flex flex-col items-start gap-y-2">
-            <div className="flex items-center justify-center gap-x-4 py-1 font-sansMed text-lg hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
+          <div className="flex flex-col items-start gap-y-2 font-normal text-lg">
+            <div className="flex justify-center gap-x-4 py-1 hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
               <a href="https://github.com/harshits19" target="_blank" className="contents">
                 <BsGithub className="h-6 w-6" /> Github
               </a>
             </div>
-            <div className="flex items-center justify-center gap-x-4 py-1 font-sansMed text-lg hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
+            <div className="flex justify-center gap-x-4 py-1 hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
               <a href="https://www.linkedin.com/in/harshitgaur19/" target="_blank" className="contents">
                 <BiLogoLinkedin className="h-6 w-6" /> Linkedin
               </a>
             </div>
-            <div className="flex items-center justify-center gap-x-4 py-1 font-sansMed text-lg hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
+            <div className="flex justify-center gap-x-4 py-1 hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
               <a href="https://www.instagram.com/_harshitz/" target="_blank" className="contents">
                 <BsInstagram className="h-6 w-6" /> Instagram
               </a>
             </div>
-            <div className="flex items-center justify-center gap-x-4 py-1 font-sansMed text-lg hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
+            <div className="flex justify-center gap-x-4 py-1 hover:text-ltPrimary dark:text-white dark:hover:text-ltPrimary">
               <a href="mailto:jai191912101@gmail.com" className="contents">
                 <BiLogoGmail className="h-6 w-6" /> Gmail
               </a>
@@ -108,7 +108,7 @@ const Footer = () => {
                 Message*
               </span>
             </div>
-            <button className="flex w-min items-center rounded bg-ltPrimary px-4 py-1 font-sansMed text-white hover:bg-primaryHover">
+            <button className="flex w-min items-center rounded bg-ltPrimary px-4 py-1 font-medium text-white hover:bg-primaryHover">
               Send
               <IoSendSharp className="ml-2 h-4 w-4" />
             </button>

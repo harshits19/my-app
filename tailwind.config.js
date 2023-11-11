@@ -13,12 +13,6 @@ export default {
         myBlack: "#343434",
         myGray: "#BDCDD6",
       },
-      dropShadow: {},
-      fontFamily: {
-        sansReg: ["Google Sans Regular", "sans-serif"],
-        sansMed: ["Google Sans Medium", "sans-serif"],
-        sansBold: ["Google Sans Bold", "sans-serif"],
-      },
     },
   },
   plugins: [],

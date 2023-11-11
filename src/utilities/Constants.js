@@ -21,6 +21,7 @@ export const TechStackSectionData = {
 export const ProjectSectionData = {
   movieApp: {
     title: "MoviesFlick",
+    imageURL: "/images/movieApp.png",
     description: [
       "The MoviesFlick app is inspired by **Netflix**, it provides the user with browsing and searching for movies and TV shows.",
       "Has features such as browsing movies and TV shows by **genre**, **searching** movies and TV shows by keyword, adding a movie or TV show to the **user-list** (watch later), and customizing the **user-profile.**",
@@ -34,6 +35,7 @@ export const ProjectSectionData = {
   },
   foodApp: {
     title: "FoodChimp",
+    imageURL: "/images/foodApp.png",
     description: [
       "The FoodChimp app provides a convenient platform that allows users to view, search for, and order food from their **nearby restaurants**. It draws its primary inspiration from **Swiggy.**",
       "The main features of the app include getting nearby restaurants based on the **GPS location** of the user and **dynamically switching the locations** of different cities.",
@@ -48,6 +50,7 @@ export const ProjectSectionData = {
   },
   videoApp: {
     title: "WatchIt",
+    imageURL: "/images/videoApp.png",
     description: [
       "It's a React project based on the **YouTube** that aims to recreate some of the core features and functionalities of the popular **video-sharing platform.**",
       "The main goal is to provide users with a responsive and interactive platform for discovering, watching, and sharing videos.",
@@ -60,12 +63,28 @@ export const ProjectSectionData = {
     },
     stackUsed: ["HTML5", "CSS3", "JavaScript", "ReactJs", "Redux"],
   },
+  notesApp: {
+    title: "Notifier",
+    imageURL: "/images/notesApp.png",
+    description: [
+      "Notifier is a versatile app designed for seamless **note-taking** and beyond. Serving as a **full-stack Notion** clone, it boasts a comprehensive editor with features such as adding cover images, nested documents, theme modes, and real-time content updates.",
+      "Users can effortlessly **create, organize, and publish** documents to the public.",
+      "It has a user-friendly interface that redefines productivity by offering a streamlined experience for users.",
+      "Built on the foundations of **Next.js** and **TypeScript**, Notifier leverages the power of **Convex** as its backend service. The app ensures secure user access through **Clerk** for authentication.",
+    ],
+    links: {
+      github: "https://github.com/harshits19/notifier-app",
+      liveDemo: "https://notifier-one.vercel.app/",
+    },
+    stackUsed: ["Tailwind", "ReactJs", "NextJs", "TypeScript","HTML5",],
+  },
 }
 
 export const ProjectPageData = {
   movieApp: ProjectSectionData.movieApp,
   foodApp: ProjectSectionData.foodApp,
   videoApp: ProjectSectionData.videoApp,
+  notesApp: ProjectSectionData.notesApp,
   /* blogApp: {
     title: "Blog-App",
     description: ["", "", ""],
@@ -112,3 +131,4 @@ export const ProjectPageData = {
     stackUsed: ["HTML5", "CSS3", "JavaScript"],
   }, */
 }
+//IconsStack = [HTML5, CSS3, JavaScript, ReactJs, Tailwind, Firebase, NodeJs, MongoDB, ExpressJs, Redux, SocketIo, NextJs, TypeScript]

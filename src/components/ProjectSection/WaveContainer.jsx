@@ -1,4 +1,4 @@
-import { DownSeperator, UpSeperator } from "../../assets/SectionSeperators"
+import { DownSeperator, UpSeperator } from "../../utilities/SectionSeperators"
 
 const WaveContainer = ({ children }) => {
   return (

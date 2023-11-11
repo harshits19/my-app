@@ -1,38 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Google Sans Bold";
-  src:
-    local("Google Sans Bold"),
-    url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Medium";
-  src:
-    local("Google Sans Medium"),
-    url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
-}
-@font-face {
-  font-family: "Google Sans Regular";
-  src:
-    local("Google Sans Regular"),
-    url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
-}
-
 @layer base {
   body {
-    @apply m-0 box-border cursor-default overflow-x-hidden bg-white p-0 text-myBlack dark:bg-dkPrimary dark:text-white;
+    @apply bg-white text-myBlack dark:bg-dkPrimary dark:text-white;
   }
   .customInput:valid + .placeholder,
   .customInput:focus + .placeholder {
     @apply -translate-y-[17px] scale-[0.8] bg-white text-[#6474E5] dark:bg-dkPrimary;
-  } 
+  }
 }
 body {
   font-size: 1rem;
-  font-family: "Google Sans Regular", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
