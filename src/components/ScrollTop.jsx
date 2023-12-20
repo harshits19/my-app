@@ -17,8 +17,13 @@ const ScrollTop = () => {
 
   return (
     <div
-      className={`${scrollBtn} hover:bg-primaryHover active:hover:bg-primaryHover fixed bottom-4 right-4 flex h-12 w-12 cursor-pointer items-center  justify-center rounded-full bg-ltPrimary text-white shadow-[0px_3px_5px_-1px_#00000033,0px_6px_10px_0px_#00000024,0px_1px_18px_0px_#0000001f] transition-all duration-200`}
-      onClick={() => document.getElementById("introSection")?.scrollIntoView({ behavior: "smooth" })}>
+      className={`${scrollBtn} fixed bottom-4 right-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full  bg-ltPrimary text-white shadow-[0px_3px_5px_-1px_#00000033,0px_6px_10px_0px_#00000024,0px_1px_18px_0px_#0000001f] transition-all duration-200 hover:bg-primaryHover active:hover:bg-primaryHover`}
+      onClick={() =>
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+      }>
       <BiSolidChevronUp className="h-6 w-6" />
     </div>
   )

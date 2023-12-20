@@ -7,16 +7,17 @@ import { ProjectPageData } from "../utilities/Constants"
 
 const ProjectsPage = () => {
   const navigate = useNavigate()
-  const { movieApp, foodApp, videoApp, notesApp } = ProjectPageData
+  const { stickyApp, movieApp, foodApp, videoApp, notesApp } = ProjectPageData
   return (
     <FrameContainer direction="right">
-      <h1 className="flex w-full justify-center pb-4 pt-12 text-center text-5xl font-medium dark:text-white md:pb-8 md:pt-20 md:text-6xl lg:text-7xl" id="projectsPageSection">
+      <h1 className="flex justify-center w-full pt-12 pb-4 text-5xl font-medium text-center dark:text-white md:pb-8 md:pt-20 md:text-6xl lg:text-7xl" id="projectsPageSection">
         Projects I've worked on
       </h1>
-      <ProjectBox data={notesApp} reversed="false" />
-      <ProjectBox data={movieApp} reversed="true" />
       <ProjectBox data={foodApp} reversed="false" />
-      <ProjectBox data={videoApp} reversed="true" />
+      <ProjectBox data={notesApp} reversed="true" />
+      <ProjectBox data={videoApp} reversed="false" />
+      <ProjectBox data={stickyApp} reversed="true" />
+      <ProjectBox data={movieApp} reversed="false" />
       <BottomButton navigate={navigate} variant="home" />
       <UseTop />
     </FrameContainer>

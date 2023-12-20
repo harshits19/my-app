@@ -15,7 +15,7 @@ const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState, scr
         </div>
         <div className="flex flex-col text-white">
           <div onClick={toggleThemeState} className="duration-00 flex cursor-pointer items-center p-4 ease-in hover:bg-[#09090929] dark:hover:bg-[#9797972b]">
-            {themeState === "light" ? <DarkBtn className="h-6 w-6" /> : <LightBtn className="h-6 w-6" />}
+            {themeState === "light" ? <DarkBtn className="w-6 h-6" /> : <LightBtn className="w-6 h-6" />}
             <span className="pl-3 leading-3">{themeState === "light" ? "Dark" : "Light"}</span>
           </div>
           <div
@@ -24,7 +24,7 @@ const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState, scr
               setMenuState(false)
               scrollToSection("introSection")
             }}>
-            <MdHome className="h-6 w-6" />
+            <MdHome className="w-6 h-6" />
             <span className="pl-3 leading-3">Home</span>
           </div>
           <div
@@ -33,7 +33,7 @@ const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState, scr
               setMenuState(false)
               scrollToSection("techstackSection")
             }}>
-            <ProjectBtn className="h-6 w-6" />
+            <ProjectBtn className="w-6 h-6" />
             <span className="pl-3 leading-3">Skills</span>
           </div>
           <div
@@ -42,7 +42,7 @@ const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState, scr
               setMenuState(false)
               scrollToSection("projectSection")
             }}>
-            <MdPerson className="h-6 w-6" />
+            <MdPerson className="w-6 h-6" />
             <span className="pl-3 leading-3">Projects</span>
           </div>
           <div
@@ -51,8 +51,8 @@ const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState, scr
               setMenuState(false)
               handleProjectNav()
             }}>
-            <MdPerson className="h-6 w-6" />
-            <span className="pl-3 leading-3">Repositories</span>
+            <MdPerson className="w-6 h-6" />
+            <span className="pl-3 leading-3">All projects</span>
           </div>
           <div
             className="duration-00 flex cursor-pointer items-center p-4 ease-in hover:bg-[#09090929] dark:hover:bg-[#9797972b]"
@@ -60,7 +60,7 @@ const MobileMenu = ({ menuState, setMenuState, themeState, toggleThemeState, scr
               setMenuState(false)
               document.getElementById("footerSection")?.scrollIntoView({ behavior: "smooth" })
             }}>
-            <ContactBtn className="h-6 w-6" />
+            <ContactBtn className="w-6 h-6" />
             <span className="pl-3 leading-3">Contact</span>
           </div>
         </div>

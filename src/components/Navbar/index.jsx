@@ -36,10 +36,10 @@ const Navbar = ({ themeState, setThemeState }) => {
     <>
       <div
         className={`sticky top-0 z-30 flex h-14 w-full items-center justify-between bg-ltPrimary px-4 text-white drop-shadow-md transition-colors duration-200 dark:bg-dkPrimary dark:drop-shadow-none md:h-16 md:px-8`}>
-        <div className="cursor-pointer text-xl font-medium tracking-wide md:text-3xl" onClick={() => navigate("/")}>
+        <div className="text-xl font-medium tracking-wide cursor-pointer md:text-3xl" onClick={() => navigate("/")}>
           harshit's
         </div>
-        <div className="hidden flex-row items-center gap-x-6 text-sm font-medium uppercase md:flex">
+        <div className="flex-row items-center hidden text-sm font-medium uppercase gap-x-6 md:flex">
           <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#09090929] dark:hover:bg-[#9797972b]" onClick={() => scrollToSection("introSection")}>
             Home
           </span>
@@ -50,7 +50,7 @@ const Navbar = ({ themeState, setThemeState }) => {
             Projects
           </span>
           <span className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#09090929] dark:hover:bg-[#9797972b]" onClick={handleProjectNav}>
-            Repositories
+            All Projects
           </span>
           <span
             className="cursor-pointer rounded-sm px-3 py-2 duration-200 ease-in hover:bg-[#09090929] dark:hover:bg-[#9797972b]"

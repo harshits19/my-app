@@ -76,7 +76,22 @@ export const ProjectSectionData = {
       github: "https://github.com/harshits19/notifier-app",
       liveDemo: "https://notifier-one.vercel.app/",
     },
-    stackUsed: ["Tailwind", "ReactJs", "NextJs", "TypeScript","HTML5",],
+    stackUsed: ["Tailwind", "ReactJs", "NextJs", "TypeScript", "HTML5"],
+  },
+  stickyApp: {
+    title: "Sticky Social",
+    imageURL: "/images/stickyApp.png",
+    description: [
+      "Sticky Social is a full-stack react-app developed on Next.js,using **Clerk** for authentication and **MongoDB** as a database.",
+      "Users can effortlessly **create, manage, and interact** with posts, including options for **liking, disliking, and reposting**. The platform prioritizes personalization, allowing users to craft **custom profiles**.",
+      "**Real-time notifications** keep users informed of new activities, while users can **follow/unfollow** other users and explore social connections.",
+      "This project highlights my skills in **full-stack development**, emphasizing secure authentication, seamless user experiences, and a robust database structure.",
+    ],
+    links: {
+      github: "https://github.com/harshits19/sticky-app",
+      liveDemo: "https://sticky-social.vercel.app/",
+    },
+    stackUsed: ["Tailwind", "ReactJs", "NextJs", "TypeScript", "MongoDB"],
   },
 }
 
@@ -85,6 +100,7 @@ export const ProjectPageData = {
   foodApp: ProjectSectionData.foodApp,
   videoApp: ProjectSectionData.videoApp,
   notesApp: ProjectSectionData.notesApp,
+  stickyApp: ProjectSectionData.stickyApp,
   /* blogApp: {
     title: "Blog-App",
     description: ["", "", ""],
