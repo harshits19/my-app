@@ -6,19 +6,20 @@
 
 @layer base {
   body {
-    @apply bg-white text-myBlack dark:bg-dkPrimary dark:text-white;
+    @apply text-base bg-white text-myBlack dark:bg-dkPrimary dark:text-white;
   }
   .customInput:valid + .placeholder,
   .customInput:focus + .placeholder {
     @apply -translate-y-[17px] scale-[0.8] bg-white text-[#6474E5] dark:bg-dkPrimary;
   }
 }
-body {
-  font-size: 1rem;
+* {
   margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

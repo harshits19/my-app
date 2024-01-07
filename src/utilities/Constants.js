@@ -12,10 +12,10 @@ export const IntroSectionData = {
 export const TechStackSectionData = {
   sectionTitle: "Here's what I do",
   skillsDescription: [
-    "⚡ Develop highly interactive Front end / User Interfaces for your web applications",
-    "⚡ Building responsive website front end using ReactJS",
-    "⚡ Creating application backend in Node, Express & MongoDb",
-    "⚡ Integration of third party services such as Firebase/ AWS",
+    "⚡ Develop highly interactive front-end and user interfaces for your web applications.",
+    "⚡ Building a responsive website front end using NextJs / React.",
+    "⚡ Creating application backends in Node, Express, and MongoDB / PostgreSQL.",
+    "⚡ Integration of third-party services such as Firebase / AWS.",
   ],
 }
 export const ProjectSectionData = {
@@ -76,7 +76,7 @@ export const ProjectSectionData = {
       github: "https://github.com/harshits19/notifier-app",
       liveDemo: "https://notifier-one.vercel.app/",
     },
-    stackUsed: ["Tailwind", "ReactJs", "NextJs", "TypeScript", "HTML5"],
+    stackUsed: ["Tailwind", "ReactJs", "NextJs", "TypeScript"],
   },
   stickyApp: {
     title: "Sticky Social",
@@ -93,6 +93,20 @@ export const ProjectSectionData = {
     },
     stackUsed: ["Tailwind", "ReactJs", "NextJs", "TypeScript", "MongoDB"],
   },
+  marketplace: {
+    title: "Marketplace",
+    imageURL: "/images/marketplace.png",
+    description: [
+      "Digital Marketplace is an online **e-commerce** app that specializes in trading **digital assets** such as UI Design Kits, source codes, icon packs, web templates, font packs, and many more.",
+      "Built on top of NextJs having **ExpressJs** on the backend server, MongoDB as a database, **tRPC for end-to-end typesafe code**, Integrated **Stripe** for processing real-time payments, and **Payload CMS** for efficient backend content management.",
+      "The application prioritizes optimal performance and scalability, ensuring users can effortlessly engage in **buying or selling digital assets** while navigating the extensive digital marketplace.",
+    ],
+    links: {
+      github: "https://github.com/harshits19/marketplace",
+      liveDemo: "https://marketplace-production-bc49.up.railway.app/",
+    },
+    stackUsed: ["TypeScript", "NextJs", "TRPC", "MongoDB", "ExpressJs"],
+  },
 }
 
 export const ProjectPageData = {
@@ -101,50 +115,17 @@ export const ProjectPageData = {
   videoApp: ProjectSectionData.videoApp,
   notesApp: ProjectSectionData.notesApp,
   stickyApp: ProjectSectionData.stickyApp,
-  /* blogApp: {
-    title: "Blog-App",
+  marketplace: ProjectSectionData.marketplace,
+  /* newApp: {
+    title: "New-App",
+    imageURL: "/images/newApp.png",
     description: ["", "", ""],
     links: {
-      github: "https://github.com/harshits19/blog-app",
+      github: "https://github.com/harshits19/new-app",
       liveDemo: "",
     },
     stackUsed: ["HTML5", "CSS3", "JavaScript"],
   },
-  foodApp2: {
-    title: "FoodSimp",
-    description: ["", "", ""],
-    links: {
-      github: "https://github.com/harshits19/food-app",
-      liveDemo: "",
-    },
-    stackUsed: ["HTML5", "CSS3", "JavaScript"],
-  },
-  newsApp: {
-    title: "News-App",
-    description: ["", "", ""],
-    links: {
-      github: "https://github.com/harshits19/news-app",
-      liveDemo: "",
-    },
-    stackUsed: ["HTML5", "CSS3", "JavaScript"],
-  },
-  loginApp: {
-    title: "Login-App",
-    description: ["", "", ""],
-    links: {
-      github: "https://github.com/harshits19/login-app",
-      liveDemo: "",
-    },
-    stackUsed: ["HTML5", "CSS3", "JavaScript"],
-  },
-  chatApp2: {
-    title: "Realtime Chat-App",
-    description: ["", "", ""],
-    links: {
-      github: "https://github.com/harshits19/",
-      liveDemo: "",
-    },
-    stackUsed: ["HTML5", "CSS3", "JavaScript"],
-  }, */
+   */
 }
 //IconsStack = [HTML5, CSS3, JavaScript, ReactJs, Tailwind, Firebase, NodeJs, MongoDB, ExpressJs, Redux, SocketIo, NextJs, TypeScript]
